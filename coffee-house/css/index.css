@@ -261,7 +261,6 @@ A IMG {
   max-width: 1152px;
   justify-content: flex-end;
   align-items: flex-start;
-  flex: 1 0 0;
 }
 
 .slide1 {
@@ -528,4 +527,123 @@ A IMG {
   line-height: 150%; /* 24px */
 }
 
+/* Footer */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  padding: 0px 40px 0px 40px;
+}
+
+.footer_container {
+  display: flex;
+  max-width: 1360px;
+  padding: 100px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 100px;
+  align-self: stretch;
+  border-radius: 40px;
+  background: var(--background-container, #665F55);
+}
+
+.footer_offer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 530px;
+}
+
+.footer_offer_title {
+  color: var(--text-light, #E1D4C9);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Inter;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 75px */
+}
+
+.its_coffee_font {
+  color: var(--text-accent, #B0907A);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Inter;
+  font-size: 60px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.socials_border {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  border: 1px solid var(--border-light, #C1B6AD); 
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 530px;
+}
+
+.contacts-us {
+  align-self: stretch;
+  color: var(--text-light, #E1D4C9);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%; /* 30px */
+}
+
+.contacts-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.contacts_info_link {
+  text-decoration: none;
+}
+
+.address {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  padding-bottom: 4px;
+}
+
+.address_font {
+  color: var(--text-light, #E1D4C9);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+  padding: 0;
+  margin: 0;
+}
 
