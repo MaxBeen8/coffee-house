@@ -524,7 +524,7 @@ A IMG {
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 150%;
+  line-height: 150%; /* 24px */
 }
 
 /* Footer */
