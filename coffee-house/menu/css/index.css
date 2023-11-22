@@ -17,8 +17,27 @@ li > a {
   line-height: 150%; /* 24px */
 }
 
-li > a:hover {
-  border-bottom: 2px solid #403F3D;
+.underline {
+  position: relative;
+}
+
+.underline::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #403F3D;
+  transform: scaleX(0);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+.underline:hover::before {
+  transform: scaleX(1);
+  opacity: 1;
 }
 
 A IMG { 
@@ -65,6 +84,11 @@ A IMG {
   align-self: stretch;
 }
 
+.logo {
+  max-width: 100px;
+  max-height: 60px;
+}
+
 .header_nav {
   display: flex;
   justify-content: center;
@@ -84,11 +108,24 @@ A IMG {
   text-decoration: none;
 }
 
+.header_coffee-menu_flex_underline {
+  position: relative;
+}
+
+.header_coffee-menu_flex_underline::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #403F3D;
+}
 
 .header_coffee-menu_flex :last-child {
   align-self: flex-start;
 }
-
 
 .font_menu_header {
   color: #403F3D;
@@ -141,6 +178,8 @@ A IMG {
   font-weight: 600;
   line-height: 125%; /* 75px */
   max-width: 800px;
+  margin: 0;
+  padding: 0;
 }
 
 .amazing {
@@ -251,6 +290,14 @@ A IMG {
   width: 310px;
   height: 310px;
   border-radius: 40px;
+}
+
+.about_img {
+  transition: 0.3s linear;
+}
+
+.about_img:hover{
+  scale: 0.92;
 }
 
 .menu_position_description {
@@ -412,6 +459,29 @@ A IMG {
   align-items: flex-start;
   gap: 8px;
   padding-bottom: 4px;
+}
+
+.underline_address {
+  position: relative;
+}
+
+.underline_address::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #E1D4C9;
+  transform: scaleX(0);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+.underline_address:hover::before {
+  transform: scaleX(1);
+  opacity: 1;
 }
 
 .address_font {

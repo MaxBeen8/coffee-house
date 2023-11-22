@@ -1,5 +1,8 @@
 @import url('https://fonts.cdnfonts.com/css/inter');
 
+a {
+  text-decoration: none;
+}
 
 p {
   margin: 0;
@@ -17,8 +20,27 @@ li > a {
   line-height: 150%; /* 24px */
 }
 
-li > a:hover {
-  border-bottom: 2px solid #403F3D;
+.underline {
+  position: relative;
+}
+
+.underline::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #403F3D;
+  transform: scaleX(0);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+.underline:hover::before {
+  transform: scaleX(1);
+  opacity: 1;
 }
 
 A IMG { 
@@ -63,6 +85,11 @@ A IMG {
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
+}
+
+.logo {
+  max-width: 100px;
+  max-height: 60px;
 }
 
 .header_nav {
@@ -117,7 +144,7 @@ A IMG {
   align-items: flex-start;
   align-self: stretch;
   border-radius: 40px;
-  background: url(../img/hero.svg);
+  background: url(../img/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -134,15 +161,29 @@ A IMG {
 
 .header_button {
   display: flex;
-  max-width: 200px;
-  padding: 20px 78px;
+  width: 160px;
+  padding: 20px;
   justify-content: center;
   align-items: center;
   gap: 8px;
   border-radius: 100px;
   background: var(--background-body, #E1D4C9);
   border: none;
+  cursor: pointer;
+  text-decoration: none;
 }
+
+.cup_of_coffee {
+  opacity: 0;
+  display: none;
+  transition: all 0.6s ease;
+}
+
+.header_button:hover .cup_of_coffee {
+  display: block;
+  opacity: 1;
+}
+
 
 .font_enjoy {
   color: var(--text-light, #E1D4C9);
@@ -642,6 +683,29 @@ A IMG {
   align-items: flex-start;
   gap: 8px;
   padding-bottom: 4px;
+}
+
+.underline_address {
+  position: relative;
+}
+
+.underline_address::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #E1D4C9;
+  transform: scaleX(0);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+.underline_address:hover::before {
+  transform: scaleX(1);
+  opacity: 1;
 }
 
 .address_font {
