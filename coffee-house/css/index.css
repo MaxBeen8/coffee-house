@@ -330,6 +330,11 @@ A IMG {
   gap: 20px;
 }
 
+.img_slider {
+  max-width: 480px;
+  max-height: 480px;
+}
+
 .slider_description {
   display: flex;
   flex-direction: column;
