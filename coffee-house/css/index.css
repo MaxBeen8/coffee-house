@@ -17,6 +17,10 @@ li > a {
   line-height: 150%; /* 24px */
 }
 
+li > a:hover {
+  border-bottom: 2px solid #403F3D;
+}
+
 A IMG { 
   border: none;
 }
@@ -72,12 +76,21 @@ A IMG {
 }
 
 .header_coffee-menu_flex {
-  height: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
+  align-self: center;
   text-decoration: none;
+}
+
+
+.header_coffee-menu_flex :last-child {
+  align-self: flex-start;
+}
+
+
+.font_menu_header {
   color: #403F3D;
   font-feature-settings: 'clig' off, 'liga' off;
   font-family: Inter, sans-serif;
@@ -87,10 +100,6 @@ A IMG {
   line-height: 150%; /* 24px */
 }
 
-
-.header_coffee-menu_flex :last-child {
-  align-self: flex-start;
-}
 
 .enjoy {
   display: flex;
