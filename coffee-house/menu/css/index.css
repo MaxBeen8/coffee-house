@@ -104,6 +104,8 @@ A IMG {
   flex: 1;
   align-self: stretch;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .header_coffee-menu_flex {
