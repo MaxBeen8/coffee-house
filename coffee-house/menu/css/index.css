@@ -318,7 +318,7 @@ A IMG {
   transition: 0.3s linear;
 }
 
-.about_img:hover{
+.menu_position:hover .about_img{
   scale: 0.92;
 }
 
