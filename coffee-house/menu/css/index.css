@@ -284,12 +284,26 @@ A IMG {
 
 .menu_flex {
   display: flex;
-  max-width: 1360px;
+  width: 100%;
   justify-content: center;
-  align-items: flex-start;
-  align-content: flex-start;
+  flex-direction: column;
   gap: 40px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap
+}
+
+.menu_flex_column1 {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: nowrap
+}
+
+.menu_flex_column2 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 40px;
+  flex-wrap: nowrap
 }
 
 .menu_position {
