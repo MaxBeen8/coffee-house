@@ -42,11 +42,6 @@ li > a {
   transition: all 0.6s ease;
 }
 
-.underline:hover::before {
-  transform: scaleX(1);
-  opacity: 1;
-}
-
 A IMG { 
   border: none;
 }
@@ -154,7 +149,6 @@ A IMG {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  align-self: stretch;
   border-radius: 40px;
   background: url(../img/hero.jpg);
   background-size: cover;
@@ -183,14 +177,6 @@ A IMG {
   border: none;
   cursor: pointer;
   text-decoration: none;
-}
-
-.header_button:hover .header_button_font {
-  transform: translateX(-13.5px);
-}
-
-.header_button:hover .cup_of_coffee {
-  opacity: 1;
 }
 
 .burger_menu_flex {
@@ -337,10 +323,6 @@ A IMG {
   cursor: pointer;
 }
 
-.button-icon-dark:hover {
-  background: #665F55;
-}
-
 .arrow {
   width: 24px;
   height: 24px;
@@ -349,10 +331,6 @@ A IMG {
 
 .arrow_hover {
   transition: all 0.3s linear;
-}
-
-.button-icon-dark:hover .arrow_hover {
-  stroke: #E1D4C9;
 }
 
 .row-slider {
@@ -523,10 +501,6 @@ A IMG {
   transition: 0.3s linear;
 }
 
-.about_img:hover{
-  scale: 0.91;
-}
-
 /* Mobile app */
 
 .mobile-app {
@@ -608,14 +582,6 @@ A IMG {
   transition: all 0.3s linear;
 }
 
-.market:hover {
-  background: #665F55;
-}
-
-.market:hover .buttons_hover {
-  fill: #E1D4C9;
-}
-
 .market_text {
   display: flex;
   flex-direction: column;
@@ -644,14 +610,6 @@ A IMG {
   font-weight: 600;
   line-height: 150%; /* 24px */
   transition: color 0.3s linear;
-}
-
-.market:hover .market_description {
-  color: #E1D4C9;
-}
-
-.market:hover .market_store {
-  color: #E1D4C9;
 }
 
 .mobile_box {
@@ -737,14 +695,6 @@ A IMG {
   cursor: pointer;
 }
 
-.socials_border:hover {
-  background: #E1D4C9;
-}
-
-.socials_border:hover .arrow_hover {
-  stroke: #403F3D;
-}
-
 .contacts {
   display: flex;
   flex-direction: column;
@@ -803,11 +753,6 @@ A IMG {
   transition: all 0.6s ease;
 }
 
-.underline_address:hover::before {
-  transform: scaleX(1);
-  opacity: 1;
-}
-
 .address_font {
   color: #E1D4C9;
   font-feature-settings: 'clig' off, 'liga' off;
@@ -822,7 +767,76 @@ A IMG {
 
 /* Media */
 
+@media (hover:none) {
+  .header_button_font {
+    transform: translateX(-14px);
+  }
+
+  .cup_of_coffee {
+    opacity: 1;
+    left: 58%;
+    top: 51%;
+  }
+}
+
+@media (hover: hover) {
+  .underline:hover::before {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+
+  .header_button:hover .header_button_font {
+    transform: translateX(-13.5px);
+  }
+  
+  .header_button:hover .cup_of_coffee {
+    opacity: 1;
+  }
+
+  .underline_address:hover::before {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+
+  .socials_border:hover {
+    background: #E1D4C9;
+  }
+  
+  .socials_border:hover .arrow_hover {
+    stroke: #403F3D;
+  }
+
+  .market:hover .market_description {
+    color: #E1D4C9;
+  }
+  
+  .market:hover .market_store {
+    color: #E1D4C9;
+  }
+
+  .market:hover {
+    background: #665F55;
+  }
+  
+  .market:hover .buttons_hover {
+    fill: #E1D4C9;
+  }
+
+  .about_img:hover {
+    scale: 0.91;
+  }
+
+  .button-icon-dark:hover .arrow_hover {
+    stroke: #E1D4C9;
+  }
+
+  .button-icon-dark:hover {
+    background: #665F55;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  
   .header_nav {
     display: none;
   }
@@ -902,6 +916,101 @@ A IMG {
 
   .contacts {
     width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 380px) {
+
+  .header_container {
+    padding: 0px 16px;
+  }
+
+  .enjoy {
+    margin-bottom: 100px;
+    padding: 0px 16px;
+  }
+
+  .enjoy_container {
+    padding: 60px 16px;
+  }
+
+  .first-word {
+    font-size: 42px;
+  }
+
+  .font_enjoy {
+    line-height: 115%;
+    font-size: 42px;
+  }
+
+  .favorite-coffee {
+    margin: 0px 16px 100px 16px;
+  }
+
+  .favorite-coffee_container {
+    gap: 39px;
+  }
+
+  .favorite-coffee_font {
+    font-size: 32px;
+  }
+
+  .favorite_font {
+    font-size: 32px;
+  }
+
+  .content {
+    gap: 17px;
+  }
+
+  .button-icon-dark {
+    display: none;
+  }
+
+  .about {
+    padding: 0px 16px 0px 16px;
+  }
+
+  .about_description {
+    font-size: 32px;
+  }
+
+  .the_perfect {
+    font-size: 32px;
+  }
+
+  .mobile-app {
+    padding: 0px 16px 0px 16px;
+  }
+
+  .mobile-app_container {
+    gap: 40px;
+  }
+
+  .mobile-app_title {
+    font-size: 32px;
+  }
+
+  .download {
+    font-size: 32px;
+  }
+
+  .footer {
+    padding: 0px 16px 0px 16px;
+  }
+
+  .footer_container {
+    padding: 60px 16px;
+    gap: 40px;
+  }
+
+  .footer_offer_title {
+    font-size: 32px;
+  }
+
+  .its_coffee_font {
+    font-size: 32px;
   }
 
 }
