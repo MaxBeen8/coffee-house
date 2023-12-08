@@ -46,6 +46,92 @@ A IMG {
   border: none;
 }
 
+/* Burger */
+
+.burger {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  background-color: #E1D4C9;
+  top: 0px;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  gap: 100px;
+  transition: all 0.3s linear;
+  overflow: hidden;
+}
+
+.header.open .burger {
+  transform: translateX(-100%);
+}
+
+.header_nav_burger {
+  padding: 100px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 60px;
+  align-self: stretch;
+  list-style: none;
+  margin: 0px;
+}
+
+.header_coffee-menu_flex_burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: center;
+  text-decoration: none;
+}
+
+.scroll_none {
+  overflow-y: hidden;
+}
+
+.burger_menu_flex {
+  box-sizing: border-box;
+  display: none;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  border: 1px solid var(--border-dark, #665F55);
+  position: relative;
+}
+
+.burger_menu_flex span {
+  position: absolute;
+  width: 16px;
+  height: 1px;
+  transform: translate(0, -50%);
+  background-color: #403F3D;
+  transition: all 0.3s linear;
+  
+}
+
+.burger_menu_flex span:nth-of-type(1) {
+  top: calc(50% + 4px);
+}
+
+.burger_menu_flex span:nth-of-type(2) {
+  top: calc(50% - 4px);
+}
+
+.header.open span:nth-of-type(1) {
+  top: 50%;
+  transform:translate(0, -50%)  rotate(45deg);
+}
+
+.header.open span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(0, -50%)  rotate(-45deg);
+}
+
 /* Body */
 
 .body {
@@ -76,6 +162,7 @@ A IMG {
   justify-content: center;
   align-items: center;
   align-self: stretch;
+  z-index: 1;
 }
 
 .header_menu {
@@ -149,10 +236,31 @@ A IMG {
   justify-content: center;
   align-items: flex-start;
   border-radius: 40px;
-  background: url(../img/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
+}
+
+.video_content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 40px;
+  z-index: -1;
+}
+
+.video {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1360px;
+  height: 100%;
+  object-fit: cover;
 }
 
 .offer {
@@ -176,25 +284,6 @@ A IMG {
   border: none;
   cursor: pointer;
   text-decoration: none;
-}
-
-.burger_menu_flex {
-  box-sizing: border-box;
-  display: none;
-  width: 44px;
-  height: 44px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100px;
-  border: 1px solid var(--border-dark, #665F55);
-}
-
-.burger_menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 7px;
 }
 
 .font_enjoy {
@@ -332,34 +421,27 @@ A IMG {
   transition: all 0.3s linear;
 }
 
-.row-slider {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
+.slider_wrapper {
+  max-width: 480px;
+  overflow: hidden;
 }
 
-.slide1 {
+.img_slider {
+  max-width: 100%;
+}
+
+.row-slider {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  transition: all 0.3s linear;
 }
 
 .content {
   display: flex;
-  width: 100%;
+  max-width: 480px;
   flex-direction: column;
   align-items: center;
   gap: 20px;
-}
-
-.img_slider_box {
-  max-width: 480px;
-  max-height: 480px;
-}
-
-.img_slider {
-  width: 100%;
-  height: 100%;
 }
 
 .slider_description {
@@ -413,18 +495,40 @@ A IMG {
   gap: 12px;
 }
 
-.control_active {
-  width: 40px;
-  height: 4px;
-  border-radius: 100px;
-  background: #665F55;
-}
-
 .control_non-active {
   width: 40px;
   height: 4px;
   border-radius: 100px;
   background: #C1B6AD;
+}
+
+.control_non-active1 {
+  width: 0px;
+  height: 4px;
+  border-radius: 100px;
+  background: #C1B6AD;
+}
+
+.control-active {
+  background: #665F55;
+  height: 4px;
+  border-radius: 100px;
+  animation-name: active;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+}
+
+@keyframes active {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 40px;
+  }
+}
+
+.pause {
+  animation-play-state: paused;
 }
 
 /* About */
@@ -862,6 +966,10 @@ A IMG {
 }
 
 @media screen and (max-width: 768px) {
+
+  .burger {
+    display: flex;
+  }
   
   .header_nav {
     display: none;
@@ -932,6 +1040,10 @@ A IMG {
   .font_enjoy {
     line-height: 115%;
     font-size: 42px;
+  }
+
+  .slider_wrapper {
+    max-width: 348px;
   }
 
   .favorite-coffee {
