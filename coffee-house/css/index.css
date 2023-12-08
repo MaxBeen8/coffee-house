@@ -236,10 +236,31 @@ A IMG {
   justify-content: center;
   align-items: flex-start;
   border-radius: 40px;
-  background: url(../img/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
+}
+
+.video_content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 40px;
+  z-index: -1;
+}
+
+.video {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1360px;
+  height: 100%;
+  object-fit: cover;
 }
 
 .offer {
