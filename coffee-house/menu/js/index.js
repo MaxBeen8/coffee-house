@@ -523,8 +523,25 @@ const fontModalPrice18 = document.getElementById('font_modal_price18');
 const fontModalPrice19 = document.getElementById('font_modal_price19');
 
 let price = Number(fontModalPrice.innerHTML);
-let value = 0;
-
+let price1 = Number(fontModalPrice1.innerHTML);
+let price2 = Number(fontModalPrice2.innerHTML);
+let price3 = Number(fontModalPrice3.innerHTML);
+let price4 = Number(fontModalPrice4.innerHTML);
+let price5 = Number(fontModalPrice5.innerHTML);
+let price6 = Number(fontModalPrice6.innerHTML);
+let price7 = Number(fontModalPrice7.innerHTML);
+let price8 = Number(fontModalPrice8.innerHTML);
+let price9 = Number(fontModalPrice9.innerHTML);
+let price10 = Number(fontModalPrice10.innerHTML);
+let price11 = Number(fontModalPrice11.innerHTML);
+let price12 = Number(fontModalPrice12.innerHTML);
+let price13 = Number(fontModalPrice13.innerHTML);
+let price14 = Number(fontModalPrice14.innerHTML);
+let price15 = Number(fontModalPrice15.innerHTML);
+let price16 = Number(fontModalPrice16.innerHTML);
+let price17 = Number(fontModalPrice17.innerHTML);
+let price18 = Number(fontModalPrice18.innerHTML);
+let price19 = Number(fontModalPrice19.innerHTML);
 
 s.addEventListener('click', () => {
   s.classList.add('item_active');
@@ -547,9 +564,8 @@ s.addEventListener('click', () => {
   tabsFontM.classList.remove('tabs_font_active');
   tabsFontL.classList.add('tabs_font');
   tabsFontL.classList.remove('tabs_font_active');
-  
+
   fontModalPrice.innerHTML = price.toFixed(2);
-  
 })
 
 m.addEventListener('click', () => {
@@ -575,7 +591,6 @@ m.addEventListener('click', () => {
   tabsFontL.classList.remove('tabs_font_active');
 
   fontModalPrice.innerHTML = (price + 0.5).toFixed(2);
-  value = Number(fontModalPrice.innerHTML);
 })
 
 l.addEventListener('click', () => {
@@ -601,7 +616,6 @@ l.addEventListener('click', () => {
   tabsFontM.classList.remove('tabs_font_active');
 
   fontModalPrice.innerHTML = (price + 1).toFixed(2);
-  value = Number(fontModalPrice.innerHTML);
 })
 
 s1.addEventListener('click', () => {
@@ -625,6 +639,8 @@ s1.addEventListener('click', () => {
   tabsFontM1.classList.remove('tabs_font_active');
   tabsFontL1.classList.add('tabs_font');
   tabsFontL1.classList.remove('tabs_font_active');
+
+  fontModalPrice1.innerHTML = price1.toFixed(2);
 })
 
 m1.addEventListener('click', () => {
@@ -648,6 +664,8 @@ m1.addEventListener('click', () => {
   tabsFontS1.classList.remove('tabs_font_active');
   tabsFontL1.classList.add('tabs_font');
   tabsFontL1.classList.remove('tabs_font_active');
+
+  fontModalPrice1.innerHTML = (price1 + 0.5).toFixed(2);
 })
 
 l1.addEventListener('click', () => {
@@ -671,6 +689,8 @@ l1.addEventListener('click', () => {
   tabsFontS1.classList.remove('tabs_font_active');
   tabsFontM1.classList.add('tabs_font');
   tabsFontM1.classList.remove('tabs_font_active');
+
+  fontModalPrice1.innerHTML = (price1 + 1).toFixed(2);
 })
 
 s2.addEventListener('click', () => {
@@ -694,6 +714,8 @@ s2.addEventListener('click', () => {
   tabsFontM2.classList.remove('tabs_font_active');
   tabsFontL2.classList.add('tabs_font');
   tabsFontL2.classList.remove('tabs_font_active');
+
+  fontModalPrice2.innerHTML = price2.toFixed(2);
 })
 
 m2.addEventListener('click', () => {
@@ -717,6 +739,8 @@ m2.addEventListener('click', () => {
   tabsFontS2.classList.remove('tabs_font_active');
   tabsFontL2.classList.add('tabs_font');
   tabsFontL2.classList.remove('tabs_font_active');
+
+  fontModalPrice2.innerHTML = (price2 + 0.5).toFixed(2);
 })
 
 l2.addEventListener('click', () => {
@@ -740,6 +764,8 @@ l2.addEventListener('click', () => {
   tabsFontS2.classList.remove('tabs_font_active');
   tabsFontM2.classList.add('tabs_font');
   tabsFontM2.classList.remove('tabs_font_active');
+
+  fontModalPrice2.innerHTML = (price2 + 1).toFixed(2);
 })
 
 s3.addEventListener('click', () => {
@@ -763,6 +789,8 @@ s3.addEventListener('click', () => {
   tabsFontM3.classList.remove('tabs_font_active');
   tabsFontL3.classList.add('tabs_font');
   tabsFontL3.classList.remove('tabs_font_active');
+
+  fontModalPrice3.innerHTML = price3.toFixed(2);
 })
 
 m3.addEventListener('click', () => {
@@ -786,6 +814,8 @@ m3.addEventListener('click', () => {
   tabsFontS3.classList.remove('tabs_font_active');
   tabsFontL3.classList.add('tabs_font');
   tabsFontL3.classList.remove('tabs_font_active');
+
+  fontModalPrice3.innerHTML = (price3 + 0.5).toFixed(2);
 })
 
 l3.addEventListener('click', () => {
@@ -809,6 +839,8 @@ l3.addEventListener('click', () => {
   tabsFontS3.classList.remove('tabs_font_active');
   tabsFontM3.classList.add('tabs_font');
   tabsFontM3.classList.remove('tabs_font_active');
+
+  fontModalPrice3.innerHTML = (price3 + 1).toFixed(2);
 })
 
 s4.addEventListener('click', () => {
@@ -832,6 +864,8 @@ s4.addEventListener('click', () => {
   tabsFontM4.classList.remove('tabs_font_active');
   tabsFontL4.classList.add('tabs_font');
   tabsFontL4.classList.remove('tabs_font_active');
+
+  fontModalPrice4.innerHTML = price4.toFixed(2);
 })
 
 m4.addEventListener('click', () => {
@@ -855,6 +889,8 @@ m4.addEventListener('click', () => {
   tabsFontS4.classList.remove('tabs_font_active');
   tabsFontL4.classList.add('tabs_font');
   tabsFontL4.classList.remove('tabs_font_active');
+
+  fontModalPrice4.innerHTML = (price4 + 0.5).toFixed(2);
 })
 
 l4.addEventListener('click', () => {
@@ -878,6 +914,8 @@ l4.addEventListener('click', () => {
   tabsFontS4.classList.remove('tabs_font_active');
   tabsFontM4.classList.add('tabs_font');
   tabsFontM4.classList.remove('tabs_font_active');
+
+  fontModalPrice4.innerHTML = (price4 + 1).toFixed(2);
 })
 
 s5.addEventListener('click', () => {
@@ -901,6 +939,8 @@ s5.addEventListener('click', () => {
   tabsFontM5.classList.remove('tabs_font_active');
   tabsFontL5.classList.add('tabs_font');
   tabsFontL5.classList.remove('tabs_font_active');
+
+  fontModalPrice5.innerHTML = price5.toFixed(2);
 })
 
 m5.addEventListener('click', () => {
@@ -924,6 +964,8 @@ m5.addEventListener('click', () => {
   tabsFontS5.classList.remove('tabs_font_active');
   tabsFontL5.classList.add('tabs_font');
   tabsFontL5.classList.remove('tabs_font_active');
+
+  fontModalPrice5.innerHTML = (price5 + 0.5).toFixed(2);
 })
 
 l5.addEventListener('click', () => {
@@ -947,6 +989,8 @@ l5.addEventListener('click', () => {
   tabsFontS5.classList.remove('tabs_font_active');
   tabsFontM5.classList.add('tabs_font');
   tabsFontM5.classList.remove('tabs_font_active');
+
+  fontModalPrice5.innerHTML = (price5 + 1).toFixed(2);
 })
 
 s6.addEventListener('click', () => {
@@ -970,6 +1014,8 @@ s6.addEventListener('click', () => {
   tabsFontM6.classList.remove('tabs_font_active');
   tabsFontL6.classList.add('tabs_font');
   tabsFontL6.classList.remove('tabs_font_active');
+
+  fontModalPrice6.innerHTML = price6.toFixed(2);
 })
 
 m6.addEventListener('click', () => {
@@ -993,6 +1039,8 @@ m6.addEventListener('click', () => {
   tabsFontS6.classList.remove('tabs_font_active');
   tabsFontL6.classList.add('tabs_font');
   tabsFontL6.classList.remove('tabs_font_active');
+
+  fontModalPrice6.innerHTML = (price6 + 0.5).toFixed(2);
 })
 
 l6.addEventListener('click', () => {
@@ -1016,6 +1064,8 @@ l6.addEventListener('click', () => {
   tabsFontS6.classList.remove('tabs_font_active');
   tabsFontM6.classList.add('tabs_font');
   tabsFontM6.classList.remove('tabs_font_active');
+
+  fontModalPrice6.innerHTML = (price6 + 1).toFixed(2);
 })
 
 s7.addEventListener('click', () => {
@@ -1039,6 +1089,8 @@ s7.addEventListener('click', () => {
   tabsFontM7.classList.remove('tabs_font_active');
   tabsFontL7.classList.add('tabs_font');
   tabsFontL7.classList.remove('tabs_font_active');
+
+  fontModalPrice7.innerHTML = price7.toFixed(2);
 })
 
 m7.addEventListener('click', () => {
@@ -1062,6 +1114,8 @@ m7.addEventListener('click', () => {
   tabsFontS7.classList.remove('tabs_font_active');
   tabsFontL7.classList.add('tabs_font');
   tabsFontL7.classList.remove('tabs_font_active');
+
+  fontModalPrice7.innerHTML = (price7 + 0.5).toFixed(2);
 })
 
 l7.addEventListener('click', () => {
@@ -1085,6 +1139,8 @@ l7.addEventListener('click', () => {
   tabsFontS7.classList.remove('tabs_font_active');
   tabsFontM7.classList.add('tabs_font');
   tabsFontM7.classList.remove('tabs_font_active');
+
+  fontModalPrice7.innerHTML = (price7 + 1).toFixed(2);
 })
 
 s8.addEventListener('click', () => {
@@ -1108,6 +1164,8 @@ s8.addEventListener('click', () => {
   tabsFontM8.classList.remove('tabs_font_active');
   tabsFontL8.classList.add('tabs_font');
   tabsFontL8.classList.remove('tabs_font_active');
+
+  fontModalPrice8.innerHTML = price8.toFixed(2);
 })
 
 m8.addEventListener('click', () => {
@@ -1131,6 +1189,8 @@ m8.addEventListener('click', () => {
   tabsFontS8.classList.remove('tabs_font_active');
   tabsFontL8.classList.add('tabs_font');
   tabsFontL8.classList.remove('tabs_font_active');
+
+  fontModalPrice8.innerHTML = (price8 + 0.5).toFixed(2);
 })
 
 l8.addEventListener('click', () => {
@@ -1154,6 +1214,8 @@ l8.addEventListener('click', () => {
   tabsFontS8.classList.remove('tabs_font_active');
   tabsFontM8.classList.add('tabs_font');
   tabsFontM8.classList.remove('tabs_font_active');
+
+  fontModalPrice8.innerHTML = (price8 + 1).toFixed(2);
 })
 
 s9.addEventListener('click', () => {
@@ -1177,6 +1239,8 @@ s9.addEventListener('click', () => {
   tabsFontM9.classList.remove('tabs_font_active');
   tabsFontL9.classList.add('tabs_font');
   tabsFontL9.classList.remove('tabs_font_active');
+
+  fontModalPrice9.innerHTML = price9.toFixed(2);
 })
 
 m9.addEventListener('click', () => {
@@ -1200,6 +1264,8 @@ m9.addEventListener('click', () => {
   tabsFontS9.classList.remove('tabs_font_active');
   tabsFontL9.classList.add('tabs_font');
   tabsFontL9.classList.remove('tabs_font_active');
+
+  fontModalPrice9.innerHTML = (price9 + 0.5).toFixed(2);
 })
 
 l9.addEventListener('click', () => {
@@ -1223,6 +1289,8 @@ l9.addEventListener('click', () => {
   tabsFontS9.classList.remove('tabs_font_active');
   tabsFontM9.classList.add('tabs_font');
   tabsFontM9.classList.remove('tabs_font_active');
+
+  fontModalPrice9.innerHTML = (price9 + 1).toFixed(2);
 })
 
 s10.addEventListener('click', () => {
@@ -1246,6 +1314,8 @@ s10.addEventListener('click', () => {
   tabsFontM10.classList.remove('tabs_font_active');
   tabsFontL10.classList.add('tabs_font');
   tabsFontL10.classList.remove('tabs_font_active');
+
+  fontModalPrice10.innerHTML = price10.toFixed(2);
 })
 
 m10.addEventListener('click', () => {
@@ -1269,6 +1339,8 @@ m10.addEventListener('click', () => {
   tabsFontS10.classList.remove('tabs_font_active');
   tabsFontL10.classList.add('tabs_font');
   tabsFontL10.classList.remove('tabs_font_active');
+
+  fontModalPrice10.innerHTML = (price10 + 0.5).toFixed(2);
 })
 
 l10.addEventListener('click', () => {
@@ -1292,6 +1364,8 @@ l10.addEventListener('click', () => {
   tabsFontS10.classList.remove('tabs_font_active');
   tabsFontM10.classList.add('tabs_font');
   tabsFontM10.classList.remove('tabs_font_active');
+
+  fontModalPrice10.innerHTML = (price10 + 1).toFixed(2);
 })
 
 s11.addEventListener('click', () => {
@@ -1315,6 +1389,8 @@ s11.addEventListener('click', () => {
   tabsFontM11.classList.remove('tabs_font_active');
   tabsFontL11.classList.add('tabs_font');
   tabsFontL11.classList.remove('tabs_font_active');
+
+  fontModalPrice11.innerHTML = price11.toFixed(2);
 })
 
 m11.addEventListener('click', () => {
@@ -1338,6 +1414,8 @@ m11.addEventListener('click', () => {
   tabsFontS11.classList.remove('tabs_font_active');
   tabsFontL11.classList.add('tabs_font');
   tabsFontL11.classList.remove('tabs_font_active');
+
+  fontModalPrice11.innerHTML = (price11 + 0.5).toFixed(2);
 })
 
 l11.addEventListener('click', () => {
@@ -1361,6 +1439,8 @@ l11.addEventListener('click', () => {
   tabsFontS11.classList.remove('tabs_font_active');
   tabsFontM11.classList.add('tabs_font');
   tabsFontM11.classList.remove('tabs_font_active');
+
+  fontModalPrice11.innerHTML = (price11 + 1).toFixed(2);
 })
 
 s12.addEventListener('click', () => {
@@ -1384,6 +1464,8 @@ s12.addEventListener('click', () => {
   tabsFontM12.classList.remove('tabs_font_active');
   tabsFontL12.classList.add('tabs_font');
   tabsFontL12.classList.remove('tabs_font_active');
+
+  fontModalPrice12.innerHTML = price12.toFixed(2);
 })
 
 m12.addEventListener('click', () => {
@@ -1407,6 +1489,8 @@ m12.addEventListener('click', () => {
   tabsFontS12.classList.remove('tabs_font_active');
   tabsFontL12.classList.add('tabs_font');
   tabsFontL12.classList.remove('tabs_font_active');
+
+  fontModalPrice12.innerHTML = (price12 + 0.5).toFixed(2);
 })
 
 l12.addEventListener('click', () => {
@@ -1430,6 +1514,8 @@ l12.addEventListener('click', () => {
   tabsFontS12.classList.remove('tabs_font_active');
   tabsFontM12.classList.add('tabs_font');
   tabsFontM12.classList.remove('tabs_font_active');
+
+  fontModalPrice12.innerHTML = (price12 + 1).toFixed(2);
 })
 
 s13.addEventListener('click', () => {
@@ -1453,6 +1539,8 @@ s13.addEventListener('click', () => {
   tabsFontM13.classList.remove('tabs_font_active');
   tabsFontL13.classList.add('tabs_font');
   tabsFontL13.classList.remove('tabs_font_active');
+
+  fontModalPrice13.innerHTML = price13.toFixed(2);
 })
 
 m13.addEventListener('click', () => {
@@ -1476,6 +1564,8 @@ m13.addEventListener('click', () => {
   tabsFontS13.classList.remove('tabs_font_active');
   tabsFontL13.classList.add('tabs_font');
   tabsFontL13.classList.remove('tabs_font_active');
+
+  fontModalPrice13.innerHTML = (price13 + 0.5).toFixed(2);
 })
 
 l13.addEventListener('click', () => {
@@ -1499,6 +1589,8 @@ l13.addEventListener('click', () => {
   tabsFontS13.classList.remove('tabs_font_active');
   tabsFontM13.classList.add('tabs_font');
   tabsFontM13.classList.remove('tabs_font_active');
+
+  fontModalPrice13.innerHTML = (price13 + 1).toFixed(2);
 })
 
 s14.addEventListener('click', () => {
@@ -1522,6 +1614,8 @@ s14.addEventListener('click', () => {
   tabsFontM14.classList.remove('tabs_font_active');
   tabsFontL14.classList.add('tabs_font');
   tabsFontL14.classList.remove('tabs_font_active');
+
+  fontModalPrice14.innerHTML = price14.toFixed(2);
 })
 
 m14.addEventListener('click', () => {
@@ -1545,6 +1639,8 @@ m14.addEventListener('click', () => {
   tabsFontS14.classList.remove('tabs_font_active');
   tabsFontL14.classList.add('tabs_font');
   tabsFontL14.classList.remove('tabs_font_active');
+
+  fontModalPrice14.innerHTML = (price14 + 0.5).toFixed(2);
 })
 
 l14.addEventListener('click', () => {
@@ -1568,6 +1664,8 @@ l14.addEventListener('click', () => {
   tabsFontS14.classList.remove('tabs_font_active');
   tabsFontM14.classList.add('tabs_font');
   tabsFontM14.classList.remove('tabs_font_active');
+
+  fontModalPrice14.innerHTML = (price14 + 1).toFixed(2);
 })
 
 s15.addEventListener('click', () => {
@@ -1591,6 +1689,8 @@ s15.addEventListener('click', () => {
   tabsFontM15.classList.remove('tabs_font_active');
   tabsFontL15.classList.add('tabs_font');
   tabsFontL15.classList.remove('tabs_font_active');
+
+  fontModalPrice15.innerHTML = price15.toFixed(2);
 })
 
 m15.addEventListener('click', () => {
@@ -1614,6 +1714,8 @@ m15.addEventListener('click', () => {
   tabsFontS15.classList.remove('tabs_font_active');
   tabsFontL15.classList.add('tabs_font');
   tabsFontL15.classList.remove('tabs_font_active');
+
+  fontModalPrice15.innerHTML = (price15 + 0.5).toFixed(2);
 })
 
 l15.addEventListener('click', () => {
@@ -1637,6 +1739,8 @@ l15.addEventListener('click', () => {
   tabsFontS15.classList.remove('tabs_font_active');
   tabsFontM15.classList.add('tabs_font');
   tabsFontM15.classList.remove('tabs_font_active');
+
+  fontModalPrice15.innerHTML = (price15 + 1).toFixed(2);
 })
 
 s16.addEventListener('click', () => {
@@ -1660,6 +1764,8 @@ s16.addEventListener('click', () => {
   tabsFontM16.classList.remove('tabs_font_active');
   tabsFontL16.classList.add('tabs_font');
   tabsFontL16.classList.remove('tabs_font_active');
+
+  fontModalPrice16.innerHTML = price16.toFixed(2);
 })
 
 m16.addEventListener('click', () => {
@@ -1683,6 +1789,8 @@ m16.addEventListener('click', () => {
   tabsFontS16.classList.remove('tabs_font_active');
   tabsFontL16.classList.add('tabs_font');
   tabsFontL16.classList.remove('tabs_font_active');
+
+  fontModalPrice16.innerHTML = (price16 + 0.5).toFixed(2);
 })
 
 l16.addEventListener('click', () => {
@@ -1706,6 +1814,8 @@ l16.addEventListener('click', () => {
   tabsFontS16.classList.remove('tabs_font_active');
   tabsFontM16.classList.add('tabs_font');
   tabsFontM16.classList.remove('tabs_font_active');
+
+  fontModalPrice16.innerHTML = (price16 + 1).toFixed(2);
 })
 
 s17.addEventListener('click', () => {
@@ -1729,6 +1839,8 @@ s17.addEventListener('click', () => {
   tabsFontM17.classList.remove('tabs_font_active');
   tabsFontL17.classList.add('tabs_font');
   tabsFontL17.classList.remove('tabs_font_active');
+
+  fontModalPrice17.innerHTML = price17.toFixed(2);
 })
 
 m17.addEventListener('click', () => {
@@ -1752,6 +1864,8 @@ m17.addEventListener('click', () => {
   tabsFontS17.classList.remove('tabs_font_active');
   tabsFontL17.classList.add('tabs_font');
   tabsFontL17.classList.remove('tabs_font_active');
+
+  fontModalPrice17.innerHTML = (price17 + 0.5).toFixed(2);
 })
 
 l17.addEventListener('click', () => {
@@ -1775,6 +1889,8 @@ l17.addEventListener('click', () => {
   tabsFontS17.classList.remove('tabs_font_active');
   tabsFontM17.classList.add('tabs_font');
   tabsFontM17.classList.remove('tabs_font_active');
+
+  fontModalPrice17.innerHTML = (price17 + 1).toFixed(2);
 })
 
 s18.addEventListener('click', () => {
@@ -1798,6 +1914,8 @@ s18.addEventListener('click', () => {
   tabsFontM18.classList.remove('tabs_font_active');
   tabsFontL18.classList.add('tabs_font');
   tabsFontL18.classList.remove('tabs_font_active');
+
+  fontModalPrice18.innerHTML = price18.toFixed(2);
 })
 
 m18.addEventListener('click', () => {
@@ -1821,6 +1939,8 @@ m18.addEventListener('click', () => {
   tabsFontS18.classList.remove('tabs_font_active');
   tabsFontL18.classList.add('tabs_font');
   tabsFontL18.classList.remove('tabs_font_active');
+
+  fontModalPrice18.innerHTML = (price18 + 0.5).toFixed(2);
 })
 
 l18.addEventListener('click', () => {
@@ -1844,6 +1964,8 @@ l18.addEventListener('click', () => {
   tabsFontS18.classList.remove('tabs_font_active');
   tabsFontM18.classList.add('tabs_font');
   tabsFontM18.classList.remove('tabs_font_active');
+
+  fontModalPrice18.innerHTML = (price18 + 1).toFixed(2);
 })
 
 s19.addEventListener('click', () => {
@@ -1867,6 +1989,8 @@ s19.addEventListener('click', () => {
   tabsFontM19.classList.remove('tabs_font_active');
   tabsFontL19.classList.add('tabs_font');
   tabsFontL19.classList.remove('tabs_font_active');
+
+  fontModalPrice19.innerHTML = price19.toFixed(2);
 })
 
 m19.addEventListener('click', () => {
@@ -1890,6 +2014,8 @@ m19.addEventListener('click', () => {
   tabsFontS19.classList.remove('tabs_font_active');
   tabsFontL19.classList.add('tabs_font');
   tabsFontL19.classList.remove('tabs_font_active');
+
+  fontModalPrice19.innerHTML = (price19 + 0.5).toFixed(2);
 })
 
 l19.addEventListener('click', () => {
@@ -1913,6 +2039,8 @@ l19.addEventListener('click', () => {
   tabsFontS19.classList.remove('tabs_font_active');
   tabsFontM19.classList.add('tabs_font');
   tabsFontM19.classList.remove('tabs_font_active');
+
+  fontModalPrice19.innerHTML = (price19 + 1).toFixed(2);
 })
 
 const itemSugar = document.getElementById('item_sugar');
@@ -2132,6 +2260,13 @@ itemSugar.addEventListener('click', () => {
     tabsFontSugar.classList.add('tabs_font');
     tabsFontSugar.classList.remove('tabs_font_active');
   }
+
+  if (itemSugar.classList.contains('item_active')) {
+    fontModalPrice.innerHTML = (Number(fontModalPrice.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice.innerHTML = (Number(fontModalPrice.innerHTML) - 0.5).toFixed(2);
+  }
+
 })
 
 itemSugar1.addEventListener('click', () => {
@@ -2149,6 +2284,12 @@ itemSugar1.addEventListener('click', () => {
   } else {
     tabsFontSugar1.classList.add('tabs_font');
     tabsFontSugar1.classList.remove('tabs_font_active');
+  }
+
+  if (itemSugar1.classList.contains('item_active')) {
+    fontModalPrice1.innerHTML = (Number(fontModalPrice1.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice1.innerHTML = (Number(fontModalPrice1.innerHTML) - 0.5).toFixed(2);
   }
 })
 
@@ -2168,6 +2309,12 @@ itemSugar2.addEventListener('click', () => {
     tabsFontSugar2.classList.add('tabs_font');
     tabsFontSugar2.classList.remove('tabs_font_active');
   }
+
+  if (itemSugar2.classList.contains('item_active')) {
+    fontModalPrice2.innerHTML = (Number(fontModalPrice2.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice2.innerHTML = (Number(fontModalPrice2.innerHTML) - 0.5).toFixed(2);
+  }
 })
 
 itemSugar3.addEventListener('click', () => {
@@ -2185,6 +2332,12 @@ itemSugar3.addEventListener('click', () => {
   } else {
     tabsFontSugar3.classList.add('tabs_font');
     tabsFontSugar3.classList.remove('tabs_font_active');
+  }
+
+  if (itemSugar3.classList.contains('item_active')) {
+    fontModalPrice3.innerHTML = (Number(fontModalPrice3.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice3.innerHTML = (Number(fontModalPrice3.innerHTML) - 0.5).toFixed(2);
   }
 })
 
@@ -2204,6 +2357,12 @@ itemSugar4.addEventListener('click', () => {
     tabsFontSugar4.classList.add('tabs_font');
     tabsFontSugar4.classList.remove('tabs_font_active');
   }
+
+  if (itemSugar4.classList.contains('item_active')) {
+    fontModalPrice4.innerHTML = (Number(fontModalPrice4.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice4.innerHTML = (Number(fontModalPrice4.innerHTML) - 0.5).toFixed(2);
+  }
 })
 
 itemSugar5.addEventListener('click', () => {
@@ -2221,6 +2380,12 @@ itemSugar5.addEventListener('click', () => {
   } else {
     tabsFontSugar5.classList.add('tabs_font');
     tabsFontSugar5.classList.remove('tabs_font_active');
+  }
+
+  if (itemSugar5.classList.contains('item_active')) {
+    fontModalPrice5.innerHTML = (Number(fontModalPrice5.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice5.innerHTML = (Number(fontModalPrice5.innerHTML) - 0.5).toFixed(2);
   }
 })
 
@@ -2240,6 +2405,12 @@ itemSugar6.addEventListener('click', () => {
     tabsFontSugar6.classList.add('tabs_font');
     tabsFontSugar6.classList.remove('tabs_font_active');
   }
+
+  if (itemSugar6.classList.contains('item_active')) {
+    fontModalPrice6.innerHTML = (Number(fontModalPrice6.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice6.innerHTML = (Number(fontModalPrice6.innerHTML) - 0.5).toFixed(2);
+  }
 })
 
 itemSugar7.addEventListener('click', () => {
@@ -2257,6 +2428,12 @@ itemSugar7.addEventListener('click', () => {
   } else {
     tabsFontSugar7.classList.add('tabs_font');
     tabsFontSugar7.classList.remove('tabs_font_active');
+  }
+
+  if (itemSugar7.classList.contains('item_active')) {
+    fontModalPrice7.innerHTML = (Number(fontModalPrice7.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice7.innerHTML = (Number(fontModalPrice7.innerHTML) - 0.5).toFixed(2);
   }
 })
 
@@ -2276,6 +2453,12 @@ itemSugar8.addEventListener('click', () => {
     tabsFontSugar8.classList.add('tabs_font');
     tabsFontSugar8.classList.remove('tabs_font_active');
   }
+
+  if (itemSugar8.classList.contains('item_active')) {
+    fontModalPrice8.innerHTML = (Number(fontModalPrice8.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice8.innerHTML = (Number(fontModalPrice8.innerHTML) - 0.5).toFixed(2);
+  }
 })
 
 itemSugar9.addEventListener('click', () => {
@@ -2293,6 +2476,12 @@ itemSugar9.addEventListener('click', () => {
   } else {
     tabsFontSugar9.classList.add('tabs_font');
     tabsFontSugar9.classList.remove('tabs_font_active');
+  }
+
+  if (itemSugar9.classList.contains('item_active')) {
+    fontModalPrice9.innerHTML = (Number(fontModalPrice9.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice9.innerHTML = (Number(fontModalPrice9.innerHTML) - 0.5).toFixed(2);
   }
 })
 
@@ -2312,6 +2501,12 @@ itemSugar10.addEventListener('click', () => {
     tabsFontSugar10.classList.add('tabs_font');
     tabsFontSugar10.classList.remove('tabs_font_active');
   }
+
+  if (itemSugar10.classList.contains('item_active')) {
+    fontModalPrice10.innerHTML = (Number(fontModalPrice10.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice10.innerHTML = (Number(fontModalPrice10.innerHTML) - 0.5).toFixed(2);
+  }
 })
 
 itemSugar11.addEventListener('click', () => {
@@ -2329,6 +2524,12 @@ itemSugar11.addEventListener('click', () => {
   } else {
     tabsFontSugar11.classList.add('tabs_font');
     tabsFontSugar11.classList.remove('tabs_font_active');
+  }
+
+  if (itemSugar11.classList.contains('item_active')) {
+    fontModalPrice11.innerHTML = (Number(fontModalPrice11.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice11.innerHTML = (Number(fontModalPrice11.innerHTML) - 0.5).toFixed(2);
   }
 })
 
@@ -2348,6 +2549,13 @@ itemCinnamon.addEventListener('click', () => {
     tabsFontCinnamon.classList.add('tabs_font');
     tabsFontCinnamon.classList.remove('tabs_font_active');
   }
+
+  if (itemCinnamon.classList.contains('item_active')) {
+    fontModalPrice.innerHTML = (Number(fontModalPrice.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice.innerHTML = (Number(fontModalPrice.innerHTML) - 0.5).toFixed(2);
+  }
+   
 })
 
 itemCinnamon1.addEventListener('click', () => {
@@ -2365,6 +2573,12 @@ itemCinnamon1.addEventListener('click', () => {
   } else {
     tabsFontCinnamon1.classList.add('tabs_font');
     tabsFontCinnamon1.classList.remove('tabs_font_active');
+  }
+
+  if (itemCinnamon1.classList.contains('item_active')) {
+    fontModalPrice1.innerHTML = (Number(fontModalPrice1.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice1.innerHTML = (Number(fontModalPrice1.innerHTML) - 0.5).toFixed(2);
   }
 })
 
@@ -2384,6 +2598,12 @@ itemCinnamon2.addEventListener('click', () => {
     tabsFontCinnamon2.classList.add('tabs_font');
     tabsFontCinnamon2.classList.remove('tabs_font_active');
   }
+
+  if (itemCinnamon2.classList.contains('item_active')) {
+    fontModalPrice2.innerHTML = (Number(fontModalPrice2.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice2.innerHTML = (Number(fontModalPrice2.innerHTML) - 0.5).toFixed(2);
+  }
 })
 
 itemCinnamon3.addEventListener('click', () => {
@@ -2401,6 +2621,12 @@ itemCinnamon3.addEventListener('click', () => {
   } else {
     tabsFontCinnamon3.classList.add('tabs_font');
     tabsFontCinnamon3.classList.remove('tabs_font_active');
+  }
+
+  if (itemCinnamon3.classList.contains('item_active')) {
+    fontModalPrice3.innerHTML = (Number(fontModalPrice3.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice3.innerHTML = (Number(fontModalPrice3.innerHTML) - 0.5).toFixed(2);
   }
 })
 
@@ -2420,6 +2646,12 @@ itemCinnamon4.addEventListener('click', () => {
     tabsFontCinnamon4.classList.add('tabs_font');
     tabsFontCinnamon4.classList.remove('tabs_font_active');
   }
+
+  if (itemCinnamon4.classList.contains('item_active')) {
+    fontModalPrice4.innerHTML = (Number(fontModalPrice4.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice4.innerHTML = (Number(fontModalPrice4.innerHTML) - 0.5).toFixed(2);
+  }
 })
 
 itemCinnamon5.addEventListener('click', () => {
@@ -2437,6 +2669,12 @@ itemCinnamon5.addEventListener('click', () => {
   } else {
     tabsFontCinnamon5.classList.add('tabs_font');
     tabsFontCinnamon5.classList.remove('tabs_font_active');
+  }
+
+  if (itemCinnamon5.classList.contains('item_active')) {
+    fontModalPrice5.innerHTML = (Number(fontModalPrice5.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice5.innerHTML = (Number(fontModalPrice5.innerHTML) - 0.5).toFixed(2);
   }
 })
 
@@ -2456,6 +2694,12 @@ itemCinnamon6.addEventListener('click', () => {
     tabsFontCinnamon6.classList.add('tabs_font');
     tabsFontCinnamon6.classList.remove('tabs_font_active');
   }
+
+  if (itemCinnamon6.classList.contains('item_active')) {
+    fontModalPrice6.innerHTML = (Number(fontModalPrice6.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice6.innerHTML = (Number(fontModalPrice6.innerHTML) - 0.5).toFixed(2);
+  }
 })
 
 itemCinnamon7.addEventListener('click', () => {
@@ -2473,6 +2717,12 @@ itemCinnamon7.addEventListener('click', () => {
   } else {
     tabsFontCinnamon7.classList.add('tabs_font');
     tabsFontCinnamon7.classList.remove('tabs_font_active');
+  }
+
+  if (itemCinnamon7.classList.contains('item_active')) {
+    fontModalPrice7.innerHTML = (Number(fontModalPrice7.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice7.innerHTML = (Number(fontModalPrice7.innerHTML) - 0.5).toFixed(2);
   }
 })
 
@@ -2492,6 +2742,13 @@ itemSyrup.addEventListener('click', () => {
     tabsFontSyrup.classList.add('tabs_font');
     tabsFontSyrup.classList.remove('tabs_font_active');
   }
+
+  if (itemSyrup.classList.contains('item_active')) {
+    fontModalPrice.innerHTML = (Number(fontModalPrice.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice.innerHTML = (Number(fontModalPrice.innerHTML) - 0.5).toFixed(2);
+  }
+
 })
 
 itemSyrup1.addEventListener('click', () => {
@@ -2509,6 +2766,12 @@ itemSyrup1.addEventListener('click', () => {
   } else {
     tabsFontSyrup1.classList.add('tabs_font');
     tabsFontSyrup1.classList.remove('tabs_font_active');
+  }
+
+  if (itemSyrup1.classList.contains('item_active')) {
+    fontModalPrice1.innerHTML = (Number(fontModalPrice1.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice1.innerHTML = (Number(fontModalPrice1.innerHTML) - 0.5).toFixed(2);
   }
 })
 
@@ -2528,6 +2791,12 @@ itemSyrup2.addEventListener('click', () => {
     tabsFontSyrup2.classList.add('tabs_font');
     tabsFontSyrup2.classList.remove('tabs_font_active');
   }
+
+  if (itemSyrup2.classList.contains('item_active')) {
+    fontModalPrice2.innerHTML = (Number(fontModalPrice2.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice2.innerHTML = (Number(fontModalPrice2.innerHTML) - 0.5).toFixed(2);
+  }
 })
 
 itemSyrup3.addEventListener('click', () => {
@@ -2545,6 +2814,12 @@ itemSyrup3.addEventListener('click', () => {
   } else {
     tabsFontSyrup3.classList.add('tabs_font');
     tabsFontSyrup3.classList.remove('tabs_font_active');
+  }
+
+  if (itemSyrup3.classList.contains('item_active')) {
+    fontModalPrice3.innerHTML = (Number(fontModalPrice3.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice3.innerHTML = (Number(fontModalPrice3.innerHTML) - 0.5).toFixed(2);
   }
 })
 
@@ -2564,6 +2839,12 @@ itemSyrup4.addEventListener('click', () => {
     tabsFontSyrup4.classList.add('tabs_font');
     tabsFontSyrup4.classList.remove('tabs_font_active');
   }
+
+  if (itemSyrup4.classList.contains('item_active')) {
+    fontModalPrice4.innerHTML = (Number(fontModalPrice4.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice4.innerHTML = (Number(fontModalPrice4.innerHTML) - 0.5).toFixed(2);
+  }
 })
 
 itemSyrup5.addEventListener('click', () => {
@@ -2581,6 +2862,12 @@ itemSyrup5.addEventListener('click', () => {
   } else {
     tabsFontSyrup5.classList.add('tabs_font');
     tabsFontSyrup5.classList.remove('tabs_font_active');
+  }
+
+  if (itemSyrup5.classList.contains('item_active')) {
+    fontModalPrice5.innerHTML = (Number(fontModalPrice5.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice5.innerHTML = (Number(fontModalPrice5.innerHTML) - 0.5).toFixed(2);
   }
 })
 
@@ -2600,6 +2887,12 @@ itemSyrup6.addEventListener('click', () => {
     tabsFontSyrup6.classList.add('tabs_font');
     tabsFontSyrup6.classList.remove('tabs_font_active');
   }
+
+  if (itemSyrup6.classList.contains('item_active')) {
+    fontModalPrice6.innerHTML = (Number(fontModalPrice6.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice6.innerHTML = (Number(fontModalPrice6.innerHTML) - 0.5).toFixed(2);
+  }
 })
 
 itemSyrup7.addEventListener('click', () => {
@@ -2617,6 +2910,12 @@ itemSyrup7.addEventListener('click', () => {
   } else {
     tabsFontSyrup7.classList.add('tabs_font');
     tabsFontSyrup7.classList.remove('tabs_font_active');
+  }
+
+  if (itemSyrup7.classList.contains('item_active')) {
+    fontModalPrice7.innerHTML = (Number(fontModalPrice7.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice7.innerHTML = (Number(fontModalPrice7.innerHTML) - 0.5).toFixed(2);
   }
 })
 
@@ -2636,6 +2935,12 @@ itemSyrup8.addEventListener('click', () => {
     tabsFontSyrup8.classList.add('tabs_font');
     tabsFontSyrup8.classList.remove('tabs_font_active');
   }
+
+  if (itemSyrup8.classList.contains('item_active')) {
+    fontModalPrice8.innerHTML = (Number(fontModalPrice8.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice8.innerHTML = (Number(fontModalPrice8.innerHTML) - 0.5).toFixed(2);
+  }
 })
 
 itemSyrup9.addEventListener('click', () => {
@@ -2653,6 +2958,12 @@ itemSyrup9.addEventListener('click', () => {
   } else {
     tabsFontSyrup9.classList.add('tabs_font');
     tabsFontSyrup9.classList.remove('tabs_font_active');
+  }
+
+  if (itemSyrup9.classList.contains('item_active')) {
+    fontModalPrice9.innerHTML = (Number(fontModalPrice9.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice9.innerHTML = (Number(fontModalPrice9.innerHTML) - 0.5).toFixed(2);
   }
 })
 
@@ -2672,6 +2983,12 @@ itemSyrup10.addEventListener('click', () => {
     tabsFontSyrup10.classList.add('tabs_font');
     tabsFontSyrup10.classList.remove('tabs_font_active');
   }
+
+  if (itemSyrup10.classList.contains('item_active')) {
+    fontModalPrice10.innerHTML = (Number(fontModalPrice10.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice10.innerHTML = (Number(fontModalPrice10.innerHTML) - 0.5).toFixed(2);
+  }
 })
 
 itemSyrup11.addEventListener('click', () => {
@@ -2689,6 +3006,12 @@ itemSyrup11.addEventListener('click', () => {
   } else {
     tabsFontSyrup11.classList.add('tabs_font');
     tabsFontSyrup11.classList.remove('tabs_font_active');
+  }
+
+  if (itemSyrup11.classList.contains('item_active')) {
+    fontModalPrice11.innerHTML = (Number(fontModalPrice11.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice11.innerHTML = (Number(fontModalPrice11.innerHTML) - 0.5).toFixed(2);
   }
 })
 
@@ -2708,6 +3031,12 @@ itemLemon.addEventListener('click', () => {
     tabsFontLemon.classList.add('tabs_font');
     tabsFontLemon.classList.remove('tabs_font_active');
   }
+
+  if (itemLemon.classList.contains('item_active')) {
+    fontModalPrice8.innerHTML = (Number(fontModalPrice8.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice8.innerHTML = (Number(fontModalPrice8.innerHTML) - 0.5).toFixed(2);
+  }
 })
 
 itemLemon1.addEventListener('click', () => {
@@ -2725,6 +3054,12 @@ itemLemon1.addEventListener('click', () => {
   } else {
     tabsFontLemon1.classList.add('tabs_font');
     tabsFontLemon1.classList.remove('tabs_font_active');
+  }
+
+  if (itemLemon1.classList.contains('item_active')) {
+    fontModalPrice9.innerHTML = (Number(fontModalPrice9.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice9.innerHTML = (Number(fontModalPrice9.innerHTML) - 0.5).toFixed(2);
   }
 })
 
@@ -2744,6 +3079,12 @@ itemLemon2.addEventListener('click', () => {
     tabsFontLemon2.classList.add('tabs_font');
     tabsFontLemon2.classList.remove('tabs_font_active');
   }
+
+  if (itemLemon2.classList.contains('item_active')) {
+    fontModalPrice10.innerHTML = (Number(fontModalPrice10.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice10.innerHTML = (Number(fontModalPrice10.innerHTML) - 0.5).toFixed(2);
+  }
 })
 
 itemLemon3.addEventListener('click', () => {
@@ -2761,6 +3102,12 @@ itemLemon3.addEventListener('click', () => {
   } else {
     tabsFontLemon3.classList.add('tabs_font');
     tabsFontLemon3.classList.remove('tabs_font_active');
+  }
+
+  if (itemLemon3.classList.contains('item_active')) {
+    fontModalPrice11.innerHTML = (Number(fontModalPrice11.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice11.innerHTML = (Number(fontModalPrice11.innerHTML) - 0.5).toFixed(2);
   }
 })
 
@@ -2780,6 +3127,12 @@ itemBerries.addEventListener('click', () => {
     tabsFontBerries.classList.add('tabs_font');
     tabsFontBerries.classList.remove('tabs_font_active');
   }
+
+  if (itemBerries.classList.contains('item_active')) {
+    fontModalPrice12.innerHTML = (Number(fontModalPrice12.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice12.innerHTML = (Number(fontModalPrice12.innerHTML) - 0.5).toFixed(2);
+  }
 })
 
 itemBerries1.addEventListener('click', () => {
@@ -2797,6 +3150,12 @@ itemBerries1.addEventListener('click', () => {
   } else {
     tabsFontBerries1.classList.add('tabs_font');
     tabsFontBerries1.classList.remove('tabs_font_active');
+  }
+
+  if (itemBerries1.classList.contains('item_active')) {
+    fontModalPrice13.innerHTML = (Number(fontModalPrice13.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice13.innerHTML = (Number(fontModalPrice13.innerHTML) - 0.5).toFixed(2);
   }
 })
 
@@ -2816,6 +3175,12 @@ itemBerries2.addEventListener('click', () => {
     tabsFontBerries2.classList.add('tabs_font');
     tabsFontBerries2.classList.remove('tabs_font_active');
   }
+
+  if (itemBerries2.classList.contains('item_active')) {
+    fontModalPrice14.innerHTML = (Number(fontModalPrice14.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice14.innerHTML = (Number(fontModalPrice14.innerHTML) - 0.5).toFixed(2);
+  }
 })
 
 itemBerries3.addEventListener('click', () => {
@@ -2833,6 +3198,12 @@ itemBerries3.addEventListener('click', () => {
   } else {
     tabsFontBerries3.classList.add('tabs_font');
     tabsFontBerries3.classList.remove('tabs_font_active');
+  }
+
+  if (itemBerries3.classList.contains('item_active')) {
+    fontModalPrice15.innerHTML = (Number(fontModalPrice15.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice15.innerHTML = (Number(fontModalPrice15.innerHTML) - 0.5).toFixed(2);
   }
 })
 
@@ -2852,6 +3223,12 @@ itemBerries4.addEventListener('click', () => {
     tabsFontBerries4.classList.add('tabs_font');
     tabsFontBerries4.classList.remove('tabs_font_active');
   }
+
+  if (itemBerries4.classList.contains('item_active')) {
+    fontModalPrice16.innerHTML = (Number(fontModalPrice16.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice16.innerHTML = (Number(fontModalPrice16.innerHTML) - 0.5).toFixed(2);
+  }
 })
 
 itemBerries5.addEventListener('click', () => {
@@ -2869,6 +3246,12 @@ itemBerries5.addEventListener('click', () => {
   } else {
     tabsFontBerries5.classList.add('tabs_font');
     tabsFontBerries5.classList.remove('tabs_font_active');
+  }
+
+  if (itemBerries5.classList.contains('item_active')) {
+    fontModalPrice17.innerHTML = (Number(fontModalPrice17.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice17.innerHTML = (Number(fontModalPrice17.innerHTML) - 0.5).toFixed(2);
   }
 })
 
@@ -2888,6 +3271,12 @@ itemBerries6.addEventListener('click', () => {
     tabsFontBerries6.classList.add('tabs_font');
     tabsFontBerries6.classList.remove('tabs_font_active');
   }
+
+  if (itemBerries6.classList.contains('item_active')) {
+    fontModalPrice18.innerHTML = (Number(fontModalPrice18.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice18.innerHTML = (Number(fontModalPrice18.innerHTML) - 0.5).toFixed(2);
+  }
 })
 
 itemBerries7.addEventListener('click', () => {
@@ -2905,6 +3294,12 @@ itemBerries7.addEventListener('click', () => {
   } else {
     tabsFontBerries7.classList.add('tabs_font');
     tabsFontBerries7.classList.remove('tabs_font_active');
+  }
+
+  if (itemBerries7.classList.contains('item_active')) {
+    fontModalPrice19.innerHTML = (Number(fontModalPrice19.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice19.innerHTML = (Number(fontModalPrice19.innerHTML) - 0.5).toFixed(2);
   }
 })
 
@@ -2924,6 +3319,12 @@ itemNuts.addEventListener('click', () => {
     tabsFontNuts.classList.add('tabs_font');
     tabsFontNuts.classList.remove('tabs_font_active');
   }
+
+  if (itemNuts.classList.contains('item_active')) {
+    fontModalPrice12.innerHTML = (Number(fontModalPrice12.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice12.innerHTML = (Number(fontModalPrice12.innerHTML) - 0.5).toFixed(2);
+  }
 })
 
 itemNuts1.addEventListener('click', () => {
@@ -2941,6 +3342,12 @@ itemNuts1.addEventListener('click', () => {
   } else {
     tabsFontNuts1.classList.add('tabs_font');
     tabsFontNuts1.classList.remove('tabs_font_active');
+  }
+
+  if (itemNuts1.classList.contains('item_active')) {
+    fontModalPrice13.innerHTML = (Number(fontModalPrice13.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice13.innerHTML = (Number(fontModalPrice13.innerHTML) - 0.5).toFixed(2);
   }
 })
 
@@ -2960,6 +3367,12 @@ itemNuts2.addEventListener('click', () => {
     tabsFontNuts2.classList.add('tabs_font');
     tabsFontNuts2.classList.remove('tabs_font_active');
   }
+
+  if (itemNuts2.classList.contains('item_active')) {
+    fontModalPrice14.innerHTML = (Number(fontModalPrice14.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice14.innerHTML = (Number(fontModalPrice14.innerHTML) - 0.5).toFixed(2);
+  }
 })
 
 itemNuts3.addEventListener('click', () => {
@@ -2977,6 +3390,12 @@ itemNuts3.addEventListener('click', () => {
   } else {
     tabsFontNuts3.classList.add('tabs_font');
     tabsFontNuts3.classList.remove('tabs_font_active');
+  }
+
+  if (itemNuts3.classList.contains('item_active')) {
+    fontModalPrice15.innerHTML = (Number(fontModalPrice15.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice15.innerHTML = (Number(fontModalPrice15.innerHTML) - 0.5).toFixed(2);
   }
 })
 
@@ -2996,6 +3415,12 @@ itemNuts4.addEventListener('click', () => {
     tabsFontNuts4.classList.add('tabs_font');
     tabsFontNuts4.classList.remove('tabs_font_active');
   }
+
+  if (itemNuts4.classList.contains('item_active')) {
+    fontModalPrice16.innerHTML = (Number(fontModalPrice16.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice16.innerHTML = (Number(fontModalPrice16.innerHTML) - 0.5).toFixed(2);
+  }
 })
 
 itemNuts5.addEventListener('click', () => {
@@ -3013,6 +3438,12 @@ itemNuts5.addEventListener('click', () => {
   } else {
     tabsFontNuts5.classList.add('tabs_font');
     tabsFontNuts5.classList.remove('tabs_font_active');
+  }
+
+  if (itemNuts5.classList.contains('item_active')) {
+    fontModalPrice17.innerHTML = (Number(fontModalPrice17.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice17.innerHTML = (Number(fontModalPrice17.innerHTML) - 0.5).toFixed(2);
   }
 })
 
@@ -3032,6 +3463,12 @@ itemNuts6.addEventListener('click', () => {
     tabsFontNuts6.classList.add('tabs_font');
     tabsFontNuts6.classList.remove('tabs_font_active');
   }
+
+  if (itemNuts6.classList.contains('item_active')) {
+    fontModalPrice18.innerHTML = (Number(fontModalPrice18.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice18.innerHTML = (Number(fontModalPrice18.innerHTML) - 0.5).toFixed(2);
+  }
 })
 
 itemNuts7.addEventListener('click', () => {
@@ -3049,6 +3486,12 @@ itemNuts7.addEventListener('click', () => {
   } else {
     tabsFontNuts7.classList.add('tabs_font');
     tabsFontNuts7.classList.remove('tabs_font_active');
+  }
+
+  if (itemNuts7.classList.contains('item_active')) {
+    fontModalPrice19.innerHTML = (Number(fontModalPrice19.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice19.innerHTML = (Number(fontModalPrice19.innerHTML) - 0.5).toFixed(2);
   }
 })
 
@@ -3068,6 +3511,12 @@ itemJam.addEventListener('click', () => {
     tabsFontJam.classList.add('tabs_font');
     tabsFontJam.classList.remove('tabs_font_active');
   }
+
+  if (itemJam.classList.contains('item_active')) {
+    fontModalPrice12.innerHTML = (Number(fontModalPrice12.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice12.innerHTML = (Number(fontModalPrice12.innerHTML) - 0.5).toFixed(2);
+  }
 })
 
 itemJam1.addEventListener('click', () => {
@@ -3085,6 +3534,12 @@ itemJam1.addEventListener('click', () => {
   } else {
     tabsFontJam1.classList.add('tabs_font');
     tabsFontJam1.classList.remove('tabs_font_active');
+  }
+
+  if (itemJam1.classList.contains('item_active')) {
+    fontModalPrice13.innerHTML = (Number(fontModalPrice13.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice13.innerHTML = (Number(fontModalPrice13.innerHTML) - 0.5).toFixed(2);
   }
 })
 
@@ -3104,6 +3559,13 @@ itemJam2.addEventListener('click', () => {
     tabsFontJam2.classList.add('tabs_font');
     tabsFontJam2.classList.remove('tabs_font_active');
   }
+
+  if (itemJam2.classList.contains('item_active')) {
+    fontModalPrice14.innerHTML = (Number(fontModalPrice14.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice14.innerHTML = (Number(fontModalPrice14.innerHTML) - 0.5).toFixed(2);
+  }
+  
 })
 
 itemJam3.addEventListener('click', () => {
@@ -3121,6 +3583,12 @@ itemJam3.addEventListener('click', () => {
   } else {
     tabsFontJam3.classList.add('tabs_font');
     tabsFontJam3.classList.remove('tabs_font_active');
+  }
+
+  if (itemJam3.classList.contains('item_active')) {
+    fontModalPrice15.innerHTML = (Number(fontModalPrice15.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice15.innerHTML = (Number(fontModalPrice15.innerHTML) - 0.5).toFixed(2);
   }
 })
 
@@ -3140,6 +3608,12 @@ itemJam4.addEventListener('click', () => {
     tabsFontJam4.classList.add('tabs_font');
     tabsFontJam4.classList.remove('tabs_font_active');
   }
+
+  if (itemJam4.classList.contains('item_active')) {
+    fontModalPrice16.innerHTML = (Number(fontModalPrice16.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice16.innerHTML = (Number(fontModalPrice16.innerHTML) - 0.5).toFixed(2);
+  }
 })
 
 itemJam5.addEventListener('click', () => {
@@ -3157,6 +3631,12 @@ itemJam5.addEventListener('click', () => {
   } else {
     tabsFontJam5.classList.add('tabs_font');
     tabsFontJam5.classList.remove('tabs_font_active');
+  }
+
+  if (itemJam5.classList.contains('item_active')) {
+    fontModalPrice17.innerHTML = (Number(fontModalPrice17.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice17.innerHTML = (Number(fontModalPrice17.innerHTML) - 0.5).toFixed(2);
   }
 })
 
@@ -3176,6 +3656,12 @@ itemJam6.addEventListener('click', () => {
     tabsFontJam6.classList.add('tabs_font');
     tabsFontJam6.classList.remove('tabs_font_active');
   }
+
+  if (itemJam6.classList.contains('item_active')) {
+    fontModalPrice18.innerHTML = (Number(fontModalPrice18.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice18.innerHTML = (Number(fontModalPrice18.innerHTML) - 0.5).toFixed(2);
+  }
 })
 
 itemJam7.addEventListener('click', () => {
@@ -3193,5 +3679,11 @@ itemJam7.addEventListener('click', () => {
   } else {
     tabsFontJam7.classList.add('tabs_font');
     tabsFontJam7.classList.remove('tabs_font_active');
+  }
+
+  if (itemJam7.classList.contains('item_active')) {
+    fontModalPrice19.innerHTML = (Number(fontModalPrice19.innerHTML) + 0.5).toFixed(2);
+  } else {
+    fontModalPrice19.innerHTML = (Number(fontModalPrice19.innerHTML) - 0.5).toFixed(2);
   }
 })
