@@ -967,6 +967,7 @@ A IMG {
 
 @media screen and (max-width: 768px) {
 
+
   .burger {
     display: flex;
   }
