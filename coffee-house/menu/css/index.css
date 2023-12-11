@@ -299,8 +299,9 @@ A IMG {
 }
 
 .item_active {
+  box-sizing: border-box;
   display: flex;
-  padding: 8px 16px 8px 8px;
+  padding: 8px 15px 8px 8px;
   justify-content: center;
   align-items: center;
   gap: 8px;
@@ -639,6 +640,8 @@ A IMG {
  }
 
 .modal_box {
+  box-sizing: border-box;
+  gap: 20px;
   display: flex;
   max-width: 800px;
   padding: 16px;
@@ -656,7 +659,6 @@ A IMG {
 
 .modal_description {
   display: flex;
-  padding-left: 20px;
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
@@ -738,6 +740,7 @@ A IMG {
   align-items: center;
   border-radius: 100px;
   background: #E1D4C9;
+  transition: all 0.3s linear;
 }
 
 .tabs_icon {
@@ -748,6 +751,7 @@ A IMG {
   align-items: center;
   border-radius: 100px;
   background: #C1B6AD;
+  transition: all 0.3s linear;
 }
 
 .modal_total {
@@ -758,7 +762,7 @@ A IMG {
 }
 
 .font_total {
-  color: var(--text-dark, #403F3D);
+  color: #403F3D;
   font-feature-settings: 'clig' off, 'liga' off;
   font-family: Inter;
   font-size: 24px;
@@ -768,7 +772,7 @@ A IMG {
 }
 
 .font_modal_price {
-  color: var(--text-dark, #403F3D);
+  color: #403F3D;
   text-align: right;
   font-feature-settings: 'clig' off, 'liga' off;
   font-family: Inter;
@@ -781,9 +785,10 @@ A IMG {
 .modal_alert {
   display: flex;
   padding: 12px 0px;
-  align-items: center;
+  align-items: flex-start;
   gap: 8px;
   align-self: stretch;
+  border-top: 1px solid #C1B6AD;
 }
 
 .modal_info {
@@ -797,6 +802,7 @@ A IMG {
 }
 
 .modal_close {
+  cursor: pointer;
   display: flex;
   width: 100%;
   height: 44px;
@@ -864,6 +870,10 @@ A IMG {
 }
 
 @media screen and (max-width: 768px) {
+
+  .modal_box {
+    max-width: 688px;
+  }
 
   .burger {
     display: flex;
@@ -957,3 +967,13 @@ A IMG {
   }
 }
 
+@media screen and (max-width: 690px) {
+  .modal_box {
+    max-width: 342px;
+    gap: 0px;
+  }
+
+  .modal_box > .photo > .about_img {
+    display: none;
+  }
+}
