@@ -89,4 +89,39 @@ function interval() {
 
 let stopInterval = setInterval(interval, 6000);
 
+/* Swipe */
+
+let x1 = 0;
+let x2 = 0;
+
+function checkDirection() {
+  if (x1 > x2) {
+      clearInterval(stopInterval);
+    count++;
+    if (count >= images.length) {
+      count = 0;
+    }
+    rollSlider();
+    stopInterval = setInterval(interval, 6000);
+  }
+  if (x1 < x2) {
+    clearInterval(stopInterval);
+    count--;
+    if (count < 0) {
+      count = images.length - 1;
+    }
+    rollSlider();
+    stopInterval = setInterval(interval, 6000);
+  }
+}
+
+sliderWrapper.addEventListener('touchstart', (event) => {
+  x1 = event.changedTouches[0].screenX;
+})
+
+sliderWrapper.addEventListener('touchend', (event) => {
+  x2 = event.changedTouches[0].screenX;
+  checkDirection();
+})
+
 
