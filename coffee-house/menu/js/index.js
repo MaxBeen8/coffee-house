@@ -8,11 +8,24 @@ burgerMenu.addEventListener('click', () => {
   body.classList.toggle('scroll_none');
 })
 
-nav.forEach(item => {
-  item.addEventListener('click', () => {
-    header.classList.toggle('open');
-    body.classList.toggle('scroll_none');
+if (document.documentElement.clientWidth <= 768) {
+  nav.forEach(item => {
+    item.addEventListener('click', () => {
+      header.classList.toggle('open');
+      body.classList.toggle('scroll_none');
+    })
   })
+}
+
+window.addEventListener('resize', () => {
+  if (document.documentElement.clientWidth > 768) {
+    header.classList.remove('open');
+    nav.forEach(item => {
+      item.addEventListener('click', () => {
+        body.classList.remove('scroll_none');
+      })
+    })
+  }
 })
 
 const coffee = document.getElementById('coffee');
