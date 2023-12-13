@@ -81,6 +81,26 @@ coffee.addEventListener('click', () => {
 }
 })
 
+window.addEventListener('resize', () => {
+  if (document.documentElement.clientWidth > 768) {
+    reload.style.display = 'none';
+    for (let i = 4; i < menuPositionCoffee.length; i++) {
+      menuPositionCoffee[i].style.display = 'flex';
+    }
+    for (let i = 4; i < menuPositionDesert.length; i++) {
+      menuPositionDesert[i].style.display = 'flex';
+    }
+  } else {
+    reload.style.display = 'flex';
+    for (let i = 4; i < menuPositionCoffee.length; i++) {
+      menuPositionCoffee[i].style.display = 'none';
+    }
+    for (let i = 4; i < menuPositionDesert.length; i++) {
+      menuPositionDesert[i].style.display = 'none';
+    }
+  }
+})
+
 tea.addEventListener('click', () => {
   tea.classList.add('item_active');
   tea.classList.remove('item');
