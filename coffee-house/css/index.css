@@ -964,6 +964,26 @@ A IMG {
 
 @media screen and (max-width: 768px) {
 
+  li > a {
+    text-decoration: none;
+    color: #403F3D;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+  }
+
+  .font_menu_header {
+    font-size: 32px;
+  }
+
+  .header_menu_icon {
+    width: 40px;
+    height: 40px;
+  }
+
 
   .burger {
     display: flex;
