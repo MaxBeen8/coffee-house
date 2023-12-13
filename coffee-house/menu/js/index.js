@@ -8,23 +8,21 @@ burgerMenu.addEventListener('click', () => {
   body.classList.toggle('scroll_none');
 })
 
-if (document.documentElement.clientWidth <= 768) {
-  nav.forEach(item => {
-    item.addEventListener('click', () => {
-      header.classList.toggle('open');
-      body.classList.toggle('scroll_none');
-    })
-  })
-}
-
 window.addEventListener('resize', () => {
-  if (document.documentElement.clientWidth > 768) {
+  if (document.documentElement.clientWidth <= 768) {
     header.classList.remove('open');
     nav.forEach(item => {
       item.addEventListener('click', () => {
-        body.classList.remove('scroll_none');
+        header.classList.toggle('open');
+        body.classList.toggle('scroll_none');
       })
     })
+  }
+})
+
+window.addEventListener('resize', () => {
+  if (document.documentElement.clientWidth > 768) {
+   body.classList.remove('scroll_none');
   }
 })
 
@@ -598,7 +596,10 @@ s.addEventListener('click', () => {
   tabsFontL.classList.add('tabs_font');
   tabsFontL.classList.remove('tabs_font_active');
 
-  fontModalPrice.innerHTML = price.toFixed(2);
+  if (s.classList.contains('item_active')) {
+    fontModalPrice.innerHTML = (Number(fontModalPrice.innerHTML)).toFixed(2);
+  }
+
 })
 
 m.addEventListener('click', () => {
@@ -623,7 +624,11 @@ m.addEventListener('click', () => {
   tabsFontL.classList.add('tabs_font');
   tabsFontL.classList.remove('tabs_font_active');
 
-  fontModalPrice.innerHTML = (price + 0.5).toFixed(2);
+  if (s.classList.contains('item_active')) {
+    fontModalPrice.innerHTML = (price + 0.5).toFixed(2);
+  }
+
+  
 })
 
 l.addEventListener('click', () => {
@@ -648,7 +653,11 @@ l.addEventListener('click', () => {
   tabsFontM.classList.add('tabs_font');
   tabsFontM.classList.remove('tabs_font_active');
 
-  fontModalPrice.innerHTML = (price + 1).toFixed(2);
+  if (s.classList.contains('item_active')) {
+    fontModalPrice.innerHTML = (price + 1).toFixed(2);
+  }
+  
+  
 })
 
 s1.addEventListener('click', () => {

@@ -10,8 +10,9 @@ burgerMenu.addEventListener('click', () => {
   body.classList.toggle('scroll_none');
 })
 
-
+window.addEventListener('resize', () => {
   if (document.documentElement.clientWidth <= 768) {
+    header.classList.remove('open');
     nav.forEach(item => {
       item.addEventListener('click', () => {
         header.classList.toggle('open');
@@ -19,17 +20,11 @@ burgerMenu.addEventListener('click', () => {
       })
     })
   }
-
-
+})
 
 window.addEventListener('resize', () => {
   if (document.documentElement.clientWidth > 768) {
-    header.classList.remove('open');
-    nav.forEach(item => {
-      item.addEventListener('click', () => {
-        body.classList.remove('scroll_none');
-      })
-    })
+   body.classList.remove('scroll_none');
   }
 })
 
