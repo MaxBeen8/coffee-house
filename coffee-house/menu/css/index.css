@@ -879,7 +879,7 @@ A IMG {
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
-    line-height: 150%; /* 24px */
+    line-height: 125%;
   }
 
   .font_menu_header {

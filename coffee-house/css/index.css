@@ -100,7 +100,7 @@ A IMG {
   justify-content: center;
   align-items: center;
   border-radius: 100px;
-  border: 1px solid var(--border-dark, #665F55);
+  border: 1px solid #665F55;
   position: relative;
 }
 
@@ -972,7 +972,7 @@ A IMG {
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
-    line-height: 150%; /* 24px */
+    line-height: 125%;
   }
 
   .font_menu_header {
